@@ -62,10 +62,10 @@
 				439D32792768C5C4005064E7 /* SceneDelegate.swift */,
 				439D327B2768C5C4005064E7 /* ViewController.swift */,
 				439D327D2768C5C4005064E7 /* Main.storyboard */,
+				439D328B2768C6D5005064E7 /* SecondViewController.swift */,
 				439D32802768C5C5005064E7 /* Assets.xcassets */,
 				439D32822768C5C5005064E7 /* LaunchScreen.storyboard */,
 				439D32852768C5C5005064E7 /* Info.plist */,
-				439D328B2768C6D5005064E7 /* SecondViewController.swift */,
 			);
 			path = login;
 			sourceTree = "<group>";
