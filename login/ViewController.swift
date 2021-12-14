@@ -18,6 +18,7 @@ class ViewController: UIViewController {
         enterYourName.rightViewMode = .always
         enterYourName.rightView = UIImageView(image: UIImage(systemName: "person"))
         
+        
         enterYourPassword.rightViewMode = .always
         enterYourPassword.rightView = UIImageView(image: UIImage(systemName: "lock"))
     }
@@ -64,7 +65,7 @@ class ViewController: UIViewController {
 
     @IBAction func forgotNamePress(_ sender: Any) {
         let allertController = UIAlertController(title: "Forgot name?", message: "No problem! Your name is Neo.", preferredStyle: .alert)
-            let action = UIAlertAction(title: "Undertand", style: .default) { action in
+            let action = UIAlertAction(title: "Understand", style: .default) { action in
             }
             allertController.addAction(action)
             self.present(allertController, animated: true, completion: nil)
@@ -73,7 +74,7 @@ class ViewController: UIViewController {
     
     @IBAction func forgotPasswordPress(_ sender: Any) {
         let allertController = UIAlertController(title: "Forgot password?", message: "No problem! Your pass is Matrix.", preferredStyle: .alert)
-            let action = UIAlertAction(title: "Undertand", style: .default) { action in
+            let action = UIAlertAction(title: "Understand", style: .default) { action in
             }
             allertController.addAction(action)
             self.present(allertController, animated: true, completion: nil)
