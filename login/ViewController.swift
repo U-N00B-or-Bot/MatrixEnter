@@ -17,10 +17,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         enterYourName.rightViewMode = .always
         enterYourName.rightView = UIImageView(image: UIImage(systemName: "person"))
-        
+        enterYourName.attributedPlaceholder = NSAttributedString(string: "Enter your name", attributes: [NSAttributedString.Key.foregroundColor:UIColor.darkGray])
         
         enterYourPassword.rightViewMode = .always
         enterYourPassword.rightView = UIImageView(image: UIImage(systemName: "lock"))
+        enterYourPassword.attributedPlaceholder = NSAttributedString(string: "Enter your password", attributes: [NSAttributedString.Key.foregroundColor:UIColor.darkGray])
     }
     
     
