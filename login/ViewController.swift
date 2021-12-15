@@ -14,6 +14,10 @@ class ViewController: UIViewController {
     var player: AVPlayer?
     let videoURL: NSURL = Bundle.main.url(forResource: "intro", withExtension: "MP4")! as NSURL
     
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }

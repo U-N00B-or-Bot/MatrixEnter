@@ -3,6 +3,14 @@
 import UIKit
 
 class SecondViewController: UIViewController {
+    
+   // override var prefersStatusBarHidden: Bool {
+  //      return true
+  //  }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .darkContent
+    }
 
     @IBOutlet weak var hello: UILabel!
     

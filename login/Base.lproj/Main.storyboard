@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -135,31 +134,22 @@
                                     <segue destination="SMA-c7-LNt" kind="unwind" unwindAction="unwindFor:" id="ano-iT-I74"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="09g-a4-3sq">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="29.666666666666668"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="530-Wg-4Gw"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="530-Wg-4Gw" firstAttribute="bottom" secondItem="gaZ-YN-Gbs" secondAttribute="bottom" constant="29" id="EAU-kP-d9n"/>
                             <constraint firstItem="581-cu-wfl" firstAttribute="centerY" secondItem="jym-Wd-JRu" secondAttribute="centerY" id="Em3-Jh-5CN"/>
-                            <constraint firstItem="09g-a4-3sq" firstAttribute="top" secondItem="530-Wg-4Gw" secondAttribute="top" id="EvS-vC-Itc"/>
                             <constraint firstItem="gaZ-YN-Gbs" firstAttribute="centerX" secondItem="530-Wg-4Gw" secondAttribute="centerX" id="FdA-Pc-K4N"/>
                             <constraint firstItem="Ol2-Iv-PHV" firstAttribute="top" secondItem="530-Wg-4Gw" secondAttribute="top" constant="35" id="Gs4-DB-YQS"/>
                             <constraint firstItem="581-cu-wfl" firstAttribute="width" secondItem="jym-Wd-JRu" secondAttribute="width" multiplier="0.703125" id="GsJ-36-G0b"/>
                             <constraint firstItem="Ol2-Iv-PHV" firstAttribute="height" secondItem="jym-Wd-JRu" secondAttribute="height" multiplier="0.166295" id="I1f-Fe-hUM"/>
                             <constraint firstItem="581-cu-wfl" firstAttribute="centerX" secondItem="jym-Wd-JRu" secondAttribute="centerX" id="QEg-mx-4cC"/>
                             <constraint firstItem="gaZ-YN-Gbs" firstAttribute="width" secondItem="jym-Wd-JRu" secondAttribute="width" multiplier="0.66875" id="Sfo-S5-Syp"/>
-                            <constraint firstItem="09g-a4-3sq" firstAttribute="leading" secondItem="530-Wg-4Gw" secondAttribute="leading" id="Wle-Bv-pOp"/>
                             <constraint firstItem="gaZ-YN-Gbs" firstAttribute="height" secondItem="jym-Wd-JRu" secondAttribute="height" multiplier="0.128521" id="XUc-pX-Euf"/>
                             <constraint firstItem="Ol2-Iv-PHV" firstAttribute="width" secondItem="jym-Wd-JRu" secondAttribute="width" multiplier="0.862319" id="Xib-yf-Kzz"/>
-                            <constraint firstItem="530-Wg-4Gw" firstAttribute="trailing" secondItem="09g-a4-3sq" secondAttribute="trailing" id="YKg-IA-nYp"/>
                             <constraint firstItem="581-cu-wfl" firstAttribute="height" secondItem="jym-Wd-JRu" secondAttribute="height" multiplier="0.396127" id="Yj4-3o-idb"/>
                             <constraint firstItem="Ol2-Iv-PHV" firstAttribute="centerX" secondItem="530-Wg-4Gw" secondAttribute="centerX" id="gB5-0C-ELz"/>
-                            <constraint firstItem="09g-a4-3sq" firstAttribute="width" secondItem="jym-Wd-JRu" secondAttribute="width" id="u6D-76-2ol"/>
-                            <constraint firstItem="09g-a4-3sq" firstAttribute="height" secondItem="jym-Wd-JRu" secondAttribute="height" multiplier="0.0401786" id="vub-TZ-UqC"/>
                         </constraints>
                     </view>
                     <connections>
@@ -175,8 +165,5 @@
     </scenes>
     <resources>
         <image name="images" width="225" height="225"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>
