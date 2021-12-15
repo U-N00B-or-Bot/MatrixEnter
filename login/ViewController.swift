@@ -86,6 +86,8 @@ class ViewController: UIViewController {
                 }
                 allertController.addAction(action)
                 self.present(allertController, animated: true, completion: nil)
+            enterYourName.text = ""
+            enterYourPassword.text = ""
         }
     }
     
