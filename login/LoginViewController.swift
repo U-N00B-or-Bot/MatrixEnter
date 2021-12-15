@@ -4,41 +4,38 @@ import UIKit
 import AVKit
 import AVFoundation
 
-class ViewController: UIViewController {
+class LoginViewController: UIViewController {
 
     @IBOutlet weak var enterYourName: UITextField!
     @IBOutlet weak var enterYourPassword: UITextField!
     
     @IBOutlet weak var btn: UIButton!
     
-    var player: AVPlayer?
-    let videoURL: NSURL = Bundle.main.url(forResource: "intro", withExtension: "MP4")! as NSURL
+    let videoURL = Bundle.main.url(forResource: "intro", withExtension: "MP4")!
+    lazy var player = AVPlayer(url: videoURL)
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
+        view.endEditing(true)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        player = AVPlayer(url: videoURL as URL)
-        player?.actionAtItemEnd = .none
+        player.actionAtItemEnd = .none
         
         let playerLayer = AVPlayerLayer(player: player)
-        playerLayer.videoGravity = AVLayerVideoGravity.resizeAspectFill
-        playerLayer.zPosition = -1
+        playerLayer.videoGravity = .resizeAspectFill
         
-        playerLayer.frame = view.frame
-        view.layer.addSublayer(playerLayer)
+        playerLayer.frame = view.bounds
+        view.layer.insertSublayer(playerLayer, at: 0)
         
-        player?.play()
+        NotificationCenter.default.addObserver(self, selector: #selector(loopVideo), name:  NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: player.currentItem)
         
-        NotificationCenter.default.addObserver(self, selector: #selector(loopVideo), name:  NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: self.player)
-        
+        player.play()
         
         enterYourName.rightViewMode = .always
         enterYourName.rightView = UIImageView(image: UIImage(systemName: "person"))
@@ -47,34 +44,17 @@ class ViewController: UIViewController {
         enterYourPassword.rightViewMode = .always
         enterYourPassword.rightView = UIImageView(image: UIImage(systemName: "lock"))
         enterYourPassword.attributedPlaceholder = NSAttributedString(string: "Enter your password", attributes: [NSAttributedString.Key.foregroundColor:UIColor.darkGray])
-    }
-    
-    
-    
-    func playerItemDidRechEnd() {
-        player!.seek(to: CMTime.zero)
-    }
-    
-    @objc func loopVideo() {
-        player?.seek(to: CMTime.zero); player?.play()
-    }
-    
-    
-    
-    let userName = "Neo"
-    let password = "Matrix"
-    
-    override func viewDidLayoutSubviews() {
+        
         btn.layer.cornerRadius = 10
     }
     
+    @objc func loopVideo() {
+        player.seek(to: CMTime.zero)
+        player.play()
+    }
     
-   
-    
-    
-    
-    
-    
+    let userName = "Neo"
+    let password = "Matrix"
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let text = enterYourName.text!
@@ -95,8 +75,6 @@ class ViewController: UIViewController {
         }
     }
     
- 
-
     @IBAction func forgotNamePress(_ sender: Any) {
         let allertController = UIAlertController(title: "Forgot name?", message: "No problem! Your name is Neo.", preferredStyle: .alert)
             let action = UIAlertAction(title: "Understand", style: .default) { action in
