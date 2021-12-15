@@ -4,7 +4,7 @@ import UIKit
 import AVKit
 import AVFoundation
 
-class ViewController: UIViewController {
+class LoginViewController: UIViewController {
 
     @IBOutlet weak var enterYourName: UITextField!
     @IBOutlet weak var enterYourPassword: UITextField!
