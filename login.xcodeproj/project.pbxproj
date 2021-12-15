@@ -14,6 +14,7 @@
 		439D32812768C5C5005064E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 439D32802768C5C5005064E7 /* Assets.xcassets */; };
 		439D32842768C5C5005064E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 439D32822768C5C5005064E7 /* LaunchScreen.storyboard */; };
 		439D328C2768C6D5005064E7 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439D328B2768C6D5005064E7 /* SecondViewController.swift */; };
+		43F8A00E2769E01C0059BD8C /* intro.MP4 in Resources */ = {isa = PBXBuildFile; fileRef = 43F8A00D2769E01C0059BD8C /* intro.MP4 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		439D32832768C5C5005064E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		439D32852768C5C5005064E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		439D328B2768C6D5005064E7 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		43F8A00D2769E01C0059BD8C /* intro.MP4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = intro.MP4; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				439D327B2768C5C4005064E7 /* ViewController.swift */,
 				439D327D2768C5C4005064E7 /* Main.storyboard */,
 				439D328B2768C6D5005064E7 /* SecondViewController.swift */,
+				43F8A00D2769E01C0059BD8C /* intro.MP4 */,
 				439D32802768C5C5005064E7 /* Assets.xcassets */,
 				439D32822768C5C5005064E7 /* LaunchScreen.storyboard */,
 				439D32852768C5C5005064E7 /* Info.plist */,
@@ -128,6 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43F8A00E2769E01C0059BD8C /* intro.MP4 in Resources */,
 				439D32842768C5C5005064E7 /* LaunchScreen.storyboard in Resources */,
 				439D32812768C5C5005064E7 /* Assets.xcassets in Resources */,
 				439D327F2768C5C4005064E7 /* Main.storyboard in Resources */,
